@@ -15,13 +15,15 @@ struct ContentView: View {
             VStack(alignment: .leading, spacing: 10) {
                 
                 Text("Chanenl News Useless - The very website where you can find the most useless news")
-                    .font(.caption2)
-               
-                Text("News 1")
                     .font(.headline)
+               
+                Text("BREAKING NEWS")
+                    .font(.largeTitle)
+                    .bold()
              
                 Text("News 2")
-                    .font(.headline)
+                    .font(.largeTitle)
+                    .bold()
                     
                 Spacer()
             }
