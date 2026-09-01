@@ -10,14 +10,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("DID YOU KNOW THE MOON IS NOT MADE OF CHEESE??????????")
-            
+        NavigationStack {
+
+            VStack(alignment: .leading, spacing: 10) {
+                
+                Text("Chanenl News Useless - The very website where you can find the most useless news")
+                    .font(.caption2)
+               
+                Text("News 1")
+                    .font(.headline)
+             
+                Text("News 2")
+                    .font(.headline)
+                    
+                Spacer()
+            }
+            .padding(.horizontal)
+            .navigationTitle("CNU")
         }
-        .padding()
     }
 }
 
