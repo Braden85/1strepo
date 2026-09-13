@@ -1,13 +1,12 @@
 //
-//  News1.swift
+//  News2.swift
 //  1strepo
 //
-//  Created by Lee Guan Yi Braden on 1/9/26.
+//  Created by Lee Guan Yi Braden on 10/9/26.
 //
 
-
 import SwiftUI
-struct News1: View {
+struct News2: View {
     let title: String
     let content: String
     @State var rating = 0
@@ -19,15 +18,15 @@ struct News1: View {
                     .font(.title)
                     .bold()
                     .frame(maxWidth: .infinity, alignment: .center)
-                Text("In a historic and super baffling scientific discovery, a team of researchers from all around the world has confirmed that Earth’s oceans contain a lot of water. The three-year expedition cost billions of dollars and involved advanced satellites, high-tech equipment, and some of the world’s top scientists. However, the groundbreaking discovery was made shortly after one researcher simply looked over the side of the boat and noticed the enormous amount of water surrounding them. This brand new information has saved millions of lives")
-                Image("waterfoundinocean")
+                Text("Scientist are finally confirming that there is indeed oxygen found in the air, the long debated question whether if oxygen exist in the air has finally been answered by a team of scientists from the University of Oxford and the University of Cambridge. They were initially skeptical about this long discuss topic. However, after conducting several months of testing and experimenting, they have concluded that the was oxygen in the air we breath. The long debated topic in the scientific community has finally come to a end")
+                Image("oxygenfoundinair")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 400, height: 300)
                 HStack {
                     Image(systemName: "star.fill")
                     Stepper(
-                        "I rate this \(rating) out of 5 on usefulness, I find my right shoe more useful than this.",
+                        "I rate this \(rating) out of 5 on usefulness, I find my left shoe more useful than this.",
                         value: $rating,
                         in: 0...5
                     )
@@ -49,9 +48,9 @@ struct News1: View {
 }
 #Preview {
     NavigationStack {
-        News1(
-            title: "News 1",
-            content: "Water was found in the ocean"
+        News2(
+            title: "News 2",
+            content: "Oxygen found in the air"
                 
         )
     }
